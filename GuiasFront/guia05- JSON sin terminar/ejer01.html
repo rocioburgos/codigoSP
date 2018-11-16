@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Aplicación Nº 1 (Generar un Json)
+Crear un Json que represente información acerca de un producto (codigoBarra, nombre,
+precio). Diseñarlo en el <script type=”text/javascript”>.
+Validar su buen diseño ingresando en “http://jsonviewer.stack.hu/” .
+Una vez validado el Json, mostrar todos sus atributos en un alert() y en el console.log() .
+
+Aplicación Nº 2 (Generar una colección de Json)
+Tomando como punto de partida el ejercicio anterior, diseñar una colección de tres elementos
+de tipo producto. Diseñarlo en el <script type=”text/javascript”>.
+Validar su buen diseño ingresando en “http://jsonviewer.stack.hu/” .
+Una vez validado el Json, mostrar todos sus atributos en un alert() y en el console.log() -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 01</title>
+  <!--<script src="ejer01.js"></script>-->
+   <script>
+        var json= {"codigoBarra" : 1010 , "nombre" : "fideo" , "precio" : 10.15}; 
+        console.log(json.nombre);
+        console.log(json.codigoBarra);
+        console.log(json.precio);
+        alert(json.precio);
+        alert(json.nombre);
+        alert(json.codigoBarra);
+        alert(json.precio);
+
+
+        var arrayJson = [
+                {"codigoBarra" : 1011 , "nombre" : "aceite" , "precio" : 50.15},
+                {"codigoBarra" : 1012 , "nombre" : "arroz" , "precio" : 20.25},
+                {"codigoBarra" : 1013 , "nombre" : "fideo" , "precio" : 15.15}
+            ];
+
+
+            for (var i = 0; i < personas.length; i++)
+                console.log(personas[i].nombre + " - " + personas[i].edad)
+
+  
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

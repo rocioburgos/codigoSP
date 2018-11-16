@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--Aplicación Nº 4 (Calculadora)
+Escribir un programa que posea dos <input type=”text”> (uno para cada operando) y un <select>
+con los símbolos matemáticos: ‘+’, ‘-’, ‘/’ y ‘*’. De acuerdo al símbolo, se deberá realizarse
+la operación indicada y mostrarse el resultado por pantalla (en un <span>). Realizar dicha
+operatoria con el objeto XMLHttpRequest.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <input type="text" id="numeroUno" name="numeroUno">
+    <select name="operador" id="operador">
+        <option value="suma">+</option>
+        <option value="resta">-</option>
+        <option value="division">/</option>
+        <option value="multiplicacion">*</option>
+    </select>
+    <input type="text" id="numeroDos" name="numeroDos">
+    <div id="resultado"></div>
+    <br>
+    <input type="button" value="Calcular" onclick="Calcular()">
+</body>
+</html>

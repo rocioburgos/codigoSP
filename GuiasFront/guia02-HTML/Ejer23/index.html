@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 23</title>
+    <script src="./JS/main.js"></script>
+    <!--23-Crear una página que posea un formulario que permita el ingreso del nombre, apellido,
+        email y cantidad de horas trabajadas a la semana de un operario. Al pulsar el botón
+        btnCalcular , se invocará a una función que calcule y muestre en un cuadro de texto (INPUT
+        type=text) el salario mensual del operario. El salario se calculará por medio de la cantidad de
+        horas trabajadas al mes por un coeficiente. Dicho coeficiente lo retornará la función
+        ObtenerCoeficiente (por el momento será siempre 6.88).-->
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Nombre: <input type="text" id="txtNombre" placeholder="Ingrese el nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellido: <input type="text" id="txtApellido" placeholder="Ingrese el apellido"></td>
+            </tr>
+            <tr>
+                <td>Email: <input type="email" id="txtEmail" placeholder="Ingrese su email"></td>
+            </tr>
+            <tr>
+                <td>Horas:<input type="number" placeholder="Ingrese horas trabajadas" id="txtHoras"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Calcular Sueldo" onclick="CalcularSueldo()"></td>
+            </tr>
+            <tr>
+                <br>
+                <td>Sueldo Mensual: <input type="text" readonly id="txtSueldo"></td>
+            </tr>
+        </table>
+
+       
+    </form>
+</body>
+</html>

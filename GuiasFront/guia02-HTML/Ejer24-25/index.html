@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 24</title>
+    <script src="./JS/main.js"></script>
+    <!-- 24- Realizar una página que permita el ingreso de: Apellido, Nombre, Dni y sexo de una
+persona. Si el usuario pulsa el botón de confirmación se invocará a una función encargada de
+validar cada uno de los datos ingresados (que tanto el nombre y apellido no estén vacíos,
+que el documento sea numérico y que el sexo sea o ‘m’ o ‘f’ ).
+
+25- Agregarle al ejercicio anterior un mensaje, en color rojo (#ff0000), en aquellos campos
+que no sean válidos.-->
+
+</head>
+<body>
+        <form>
+                <table>
+                    
+                    <tr>
+                        <td>Nombre: <input type="text" id="txtNombre" placeholder="Ingrese el nombre">
+                            <span style="color:red; display: none" id="spanN" >*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apellido: <input type="text" id="txtApellido" placeholder="Ingrese el apellido">
+                            <span style="color:red; display: none" id="spanA" >*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo: <input type="text" id="txtSexo" placeholder="Ingrese su sexo">
+                            <span style="color:red; display: none" id="spanS" >*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DNI:<input type="number" placeholder="Ingrese DNI" id="txtDni">
+                            <span style="color:red; display: none" id="spanD" >*</span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="Confirmar" onclick="Validar()"></td>
+                    </tr>
+                    
+                </table>
+        
+               
+            </form>
+</body>
+</html>

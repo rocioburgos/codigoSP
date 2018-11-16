@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--
+        Aplicación No 30 (Generar Tabla III)
+Utilizando tags de Html (<table>, <tr> y <td>) se pide generar en forma dinámica una tabla.
+Dicha tabla se formará a partir de los valores de dos controles de tipo <select>. Cada uno de
+estos controles contendrá valores desde el 1 hasta el 50.
+Al pulsar el control <input> (type=”button”) con la leyenda “Generar Tabla”, se invocará a un
+procedimiento que creará la tabla a partir de la cantidad seleccionada de filas y columnas.
+    -->
+</head>
+<body>
+    <form action="ejer30.php" method="POST">
+        <h3>FILAS</h3>
+        <select name="selectFila" id="selectFila">
+            
+            <script>
+            for(var i=1;i<=50;i++){
+               document.getElementById("selectFila").innerHTML+= `<option value="${i}" >${i}</option>`;
+            }
+            </script>
+        </select>
+        <h3>COLUMNA</h3>
+        <select name="selectColum" id="selectColum">
+            
+            <script>
+            for(var i=1;i<=50;i++){
+               document.getElementById("selectColum").innerHTML+= `<option value="${i}" >${i}</option>`;
+            }
+            </script>
+        </select>
+        <input type="submit" value="Generar tabla">
+    </form>
+    
+</body>
+</html>

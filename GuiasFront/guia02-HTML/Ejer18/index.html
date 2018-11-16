@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 18</title>
+    <script src="./JS/main.js"></script>
+    <!--
+        18- Confeccionar un formulario que solicite el ingreso del nombre de una persona y permita
+        votar el sitio. Mediante un control de tipo radio, el visitante puede elegir entre las siguientes
+        opciones: Excelente, Muy Bueno, Bueno, Regular y Malo. Al pulsar el botón, mostrar la
+        opción elegida por consola.
+    -->
+</head>
+<body>
+    <form name="votoFrm">
+        <table align="center">
+            <tr>
+                <td>
+                    <input type="text" id="name" placeholder="Ingrese su nombre">
+                </td>
+            </tr>
+            <tr>
+					<td colspan="2"><h4>Elija su voto:</h4></td>
+				</tr>
+				<tr>
+					<td>Excelente</td>					
+					<td  style="text-align:left;padding-left:15px">
+						<input type="radio" name="rdoVoto" value="Excelente" checked="checked" />						
+					</td>
+				</tr>
+				<tr>
+					<td>Muy Bueno</td>					
+					<td  style="text-align:left;padding-left:15px">
+						<input type="radio" name="rdoVoto" value="MuyBueno" />						
+					</td>
+				</tr>
+				<tr>
+					<td>Bueno</td>					
+					<td  style="text-align:left;padding-left:15px">
+						<input type="radio" name="rdoVoto" value="Bueno" />						
+					</td>
+                </tr>
+                <tr>
+                        <td>Regular</td>					
+                        <td  style="text-align:left;padding-left:15px">
+                            <input type="radio" name="rdoVoto" value="Regular" />						
+                        </td>
+                    </tr>
+                <tr>
+                        <td>Malo</td>					
+                        <td  style="text-align:left;padding-left:15px">
+                            <input type="radio" name="rdoVoto" value="Malo" />						
+                        </td>
+                    </tr>
+                        
+                    <tr>
+                            <td colspan="2" align="right">
+                                <input type="button" id="btnEnviar" value="Enviar" onclick="Click()"/>
+                            </td>
+                        </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

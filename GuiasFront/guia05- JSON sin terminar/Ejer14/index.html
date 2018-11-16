@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remeras JSON</title>
+    <script src="manejadora.js"></script>
+</head>
+<body>
+    <form action="" method="GET">
+        <table >
+            <tr> 
+                <input type="button" value="Generar listado" onclick="MostrarRemeras()">
+                <div id="divRemeras"></div>
+            </tr>
+
+            <tr>
+                <select name="filtrado" id="filtrado">
+                    <option value="Pais">Pais</option>
+                    <option value="Color">Color</option>
+                    <option value="Tamaño">Tamaño</option>
+                </select>
+            <!--<input type="text" placeholder="Ingrese el nombre del pais" name="txtPais" id="txtPais">-->    
+            <input type="text" placeholder="Ingrese segun el campo" id="txtFiltro" name="txtFiltro">
+                <input type="button" value="Filtrar" onclick="FiltrarRemeras()">
+                <div id="divFiltradas"></div>
+            </tr>
+            <tr>
+                <td>Alta de Remera</td>
+            </tr>
+                <!--slogan size price color manofacturer{name logo location{country city}}-->
+                <tr>
+                <td> 
+                        ID <input type="number" id="id" name="id">
+                    <br>Slogan <input type="text" id="slogan" name="size">
+                    <br> Size <input type="text" id="size" name="size">
+                    <br> Price <input type="text" id="price" name="price">
+                    <br> color <input type="text" id="color" name="color">
+                    <br> nombre Fabrica <input type="text" id="nameFabrica" name="nameFabrica">
+                    <br> logo Fabrica <input type="text" id="logoFabrica" name="logoFabrica" readonly>
+                    <br> pais Fabrica <input type="text" id="paisFabrica" name="paisFabrica">
+                    <br> ciudad Fabrica <input type="text" id="ciudadFabrica" name="ciudadFabrica">
+
+                </td>
+                <td>
+                    <input type="button" onclick="AgregarRemera()" value="Agregar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

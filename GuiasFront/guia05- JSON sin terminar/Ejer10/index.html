@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+ <!--Aplicación Nº 10 (Agregar elemento a un .json II)
+Examinar cuidadosamente el archivo city.list.min.json, luego realizar una aplicación web, similar a 
+la del ejercicio anterior, que permita armar un listado con el contenido completo de las ciudades. 
+El archivo .php se deberá nombrar como administrarCiudades.php, pasándole como parámetro la opción “traerCiudades”.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js"></script>
+</head>
+<body>
+    <button onclick="ArmarTabla()">Armar tabla</button>
+    <br><br><br>
+    <label for="">Datos</label><br>
+    <input type="numbre" placeholder="ID" id="id"><br>
+    <input type="text" placeholder="Name" id="name"><br>
+    <input type="text" placeholder="country" id="country"><br>
+    <input type="text" placeholder="lon" id="lon"><br>
+    <input type="text" placeholder="lat" id="lat"><br>
+    <button onclick="AgregarAtabla()">Agregar a tabla</button>
+   <!-- <div id="tabla"></div>-->
+
+    <table border="1" id="tabla">
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Pais</th>
+        <th>Lon</th>
+        <th>Lat</th>
+        <th>Accion</th>
+        
+    </table>
+</body>
+</html>

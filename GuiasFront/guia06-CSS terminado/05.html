@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--5-Confeccionar una página que contenga dos divisiones con una serie de párrafos cada una. 
+    Disponer de un color de fondo distinto para cada sección. En la segunda sección mostrar el 
+    mismo texto de la primera sección pero con algunas palabras tachadas 
+        (utilizar text-decoration:underline en un archivo ubicado en la carpeta raíz de la aplicación).-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .divUno{
+            background-color: rgba(154, 199, 51, 0.884);
+        }
+
+        .divDos{
+            background-color: rgb(238, 233, 160);
+            text-decoration: line-through;
+        }
+
+        div{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="divUno">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries, but also the leap into 
+            
+        </p>
+        <p>
+                Electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.
+    
+        </p>
+    </div>
+    <div class="divDos">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, but also the leap into 
+                
+            </p>
+            <p>
+                    Electronic typesetting, remaining essentially unchanged. It was popularised in 
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including 
+                    versions of Lorem Ipsum.
+        
+            </p>
+        </div>
+
+
+</body>
+</html>

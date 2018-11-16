@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--Aplicación Nº 2 (Mostrar contenido de archivo)
+Generar una aplicación Web, que permita al usuario ingresar el path de un archivo de texto. 
+Al pulsar un botón, y utilizando el objeto XMLHttpRequest, mostrar el contenido del archivo en un <div>.
+En caso de que el archivo no exista, mostrar un mensaje de error por alert().
+
+Aplicación Nº 3 (Determinar si una palabra existe)
+A partir del ejercicio anterior, agregarle un <input type=”text”> que le permita al usuario ingresar un palabra.
+ Por medio del el objeto XMLHttpRequest, buscar el archivo, y al encontrarlo, buscar dentro del archivo si existe
+  la palabra que ingreso el usuario dentro del mismo.
+Indicar, por medio de mensajes:
+ Si el archivo existe o no.
+ Si la palabra existe o no.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="funcion.js"></script>
+</head>
+<body>
+    <input type="text" placeholder="Ingrese un path" id="archivoPath" name="archivoPath">
+    <input type="text" id="txtPalabra" name="txtPalabra" placeholder="Ingrese la palabra a buscar">
+    <div id="resultado"></div>
+
+    <input type="button" value="Enviar" onclick="Funcion()"> 
+</body>
+</html>

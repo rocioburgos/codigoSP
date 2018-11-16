@@ -1,0 +1,22 @@
+0-CABA-Lanus-Palermo
+1-San Fernando-Belen-Fiambala
+2-Resistencia-Villa Angela
+3-Trelew-Puerto Madryn- Comodoro Rivadavia-Rawson
+4-Carlos Paz-Cordoba Capital-Villa Maria-Rio Cuarto
+5-Goya-Mercedes-Bella Vista
+6-Paraná-Gualeguaychú-Concordia
+7-Formosa-Clorinda-Las lomitas
+8-Tilcara-Purmamarca-Humahuaca
+9-Ciudad de Santa Rosa-General Pico-General Acha
+10-La Rioja-Chilecito-Calahorra
+11-San Rafael-Lujan de Cuyo-Godoy Cruz
+12-Posadas-Oberá-Puerto Iguazu
+13-San Martin de Los Andes-Villa La Angostura
+14-Viedma-Cipolleti-Bariloche-General Roca
+15-Salta-Cafayate-General Guemes
+16-Caucete-Barreal-San Juan
+17-Villa de Merlo-Villa Mercedes
+18-Rio Gallegos-El Calafate-Puerto Santa Cruz
+19-Rosario-Rafaela-Venado Tuerto
+20-Termas de Rio Hondo-La Banda-Loreto
+21-Ushuaia-Rio Grande-Tolhuin

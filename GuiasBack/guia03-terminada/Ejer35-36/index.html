@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Turismo</title>
+</head>
+<body>
+    <form action="gestor.php" method="post">
+        <label for="">Destino</label>
+        <select name="destinos" id="destinos">
+            <option value="Rio">Rio de Janeiro</option>
+            <option value="Miami">Miami</option>
+            <option value="Punta">Punta del Este</option>
+            <option value="Habana">La Habanna</option>
+            <option value="Ibiza">Ibiza</option>
+        </select>
+        <br>
+        <label for="pasajeros">Pasajeros</label> <input type="number" name="pasajeros" id="pasajeros" placeholder="Ingrese la cantidad de pasajeros">
+        <br>
+        <label for="">Forma de pago</label><br>
+        <input type="radio" name="pago" value="Efectivo" checked>Efectivo<br>
+        <input type="radio" name="pago" value="credito">Tarjeta de credito<br>
+        <input type="radio" name="pago" value="debito">Tarjeta de debito<br>
+
+       
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

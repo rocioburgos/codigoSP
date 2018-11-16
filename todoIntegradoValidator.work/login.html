@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Bootstrap validator -->
+
+    <link rel="stylesheet" href="./validator/css/bootstrapValidator.min.css">
+    <script src="./validator/js/bootstrapValidator.min.js" ></script>
+    <!--Mis scripts -->
+    <script src="./Frontend/onload.js"></script>
+    <script src="./Frontend/validaciones.js"></script>
+    
+<title>Login</title>
+</head>
+<body>
+    <div class="container">
+    <form class="well form-horizontal"id="form" >
+        <div class="form-group">
+                <label class="col-md-4   control-label">Email</label>   
+                <div class="col-md-4 inputGroupContainer"> 
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" >
+                    </div>
+                </div>
+            </div>
+
+        <div class="form-group">
+                <label class="col-md-4 control-label">Clave</label>
+                <div class="col-md-4 inputGroupContainer"> 
+                    <div class="input-group ">
+                        <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        <input type="password" class="form-control" id="clave" name="clave" placeholder="Contraseña" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+        </div>
+            
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary col-xs-12 col-sm-4 col-md-4">Enviar <span class="glyphicon glyphicon-send"></span></button>  
+                    <button type="reset" class="btn btn-warning col-xs-12 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Limpiar <span class="glyphicon glyphicon-send"></span></button>
+                   
+                </div>
+                 
+            </div>
+       
+        <div id="tabla" class="alert alert-warning col-4" style="display:none">Usuario no encontrado.</div>
+    </form>
+
+    <div class="row">
+        <a class="btn btn-success col-xs-12 col-sm-12 col-md-4 col-md-offset-4 " href="./registro.html">Quiero Registrarme!</a>
+    </div>
+                         
+    </div>
+</body>
+</html>

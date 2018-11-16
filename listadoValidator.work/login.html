@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Bootstrap validator -->
+
+    <link rel="stylesheet" href="./css/bootstrapValidator.min.css">
+    <script src="./js/bootstrapValidator.min.js" ></script>
+ <!--Mis scripts -->
+ <script src="./onload.js"></script>
+<script src="validaciones.js"></script>
+<script src="main.js"></script>
+<title>Login</title>
+</head>
+<body>
+    <div class="container">
+        
+    <form class="well form-horizontal"id="form" >
+      <!--  <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" id="email"/>
+        </div>
+    
+        <div class="form-group">
+            <label>Clave</label>
+            <input type="password" class="form-control" name="clave" id="clave" />
+        </div>
+        <div class="form-group">
+            <button  type="submit" class="btn btn-success" >Enviar <i class="glyphicon glyphicon-send"></i></button>
+            <button type="reset" class="btn btn-warning">Limpiar</button>
+        </div>
+         <div class="form-group">     
+                    <div class="col-xs-12 col-sm-12 controls">
+                        <button  id="enviar" name="button1id" type="submit"           class="btn btn-success col-xs-12 col-sm-4 col-sm-offset-1 col-sm-onset-1 " >Enviar</button>
+                        <button type="reset" id="Limpar" name="Limpar"                class="btn btn-warning col-xs-12 col-sm-4 col-sm-onset-1 col-sm-offset-1 " >Limpar</button>
+                    </div>     
+                </div>
+    </form>
+
+    <div id="tabla" class="alert alert-warning" style="display:none">Usuario no encontrado.</div>
+        -->
+        <div class="form-group">
+                <label class="col-md-4   control-label">Email</label>   
+                <div class="col-md-4 inputGroupContainer"> 
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" >
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Clave</label>
+                <div class="col-md-4 inputGroupContainer"> 
+                    <div class="input-group ">
+                        <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        <input type="password" class="form-control" id="clave" name="clave" placeholder="Contraseña" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+            
+            
+
+               
+
+                <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-success">Enviar <span class="glyphicon glyphicon-send"></span></button>
+                         
+                            <button type="reset" class="btn btn-warning">Limpiar <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                </div>
+                <div id="tabla" class="alert alert-warning col-4" style="display:none">Usuario no encontrado.</div>
+    </form>
+    </div>
+</body>
+</html>
